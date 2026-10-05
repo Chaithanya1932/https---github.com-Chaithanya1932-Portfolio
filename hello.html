@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Birru Krishna Chaithanya - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color:  black;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header {
+            text-align: center; 
+            background-color: black;
+            color: white;
+            padding: 60px 20px;
+            border-bottom: 5px solid lightblue;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: grey;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: darkgrey;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: skyblue;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px black;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed whitesmoke;
+        }
+
+        h2 {
+            color: black;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .hobby-card {
+            background-color: lightgrey;
+            padding: 15px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid lightgrey;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: whitesmoke;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid lightgrey;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Birru Krishna Chaithanya</h1>
+        <p>Welcome to my first HTML & CSS Portfolio Project!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#skills">Skills Table</a>
+        <a href="#contact">Contact Form</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I am Birru Krishna Chaithanya. I am currently a B.Tech student studying Artificial Intelligence and Business at the Scaler School of Technology.</p>
+            <br>
+            <p>I am building this website to practice the web development concepts I just learned in class, like how the CSS box model works, how to use Flexbox to center my navigation menu, and how to use CSS Grid to layout my hobbies below. It's simple, but I coded it entirely from scratch just like you said sir!</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Things I Love Doing</h2>
+            <p>Here are some of my hobbies, laid out using <strong>CSS Grid</strong>:</p>
+            
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <h3>🏎️ Formula 1</h3>
+                    <p>Huge fan of motorsports and watching F1 races on the weekends.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>🎮 Gaming</h3>
+                    <p>I love relaxing with some good video games when I'm not studying.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>👨‍🍳 Cooking</h3>
+                    <p>Experimenting in the kitchen and learning new recipes is a favorite pastime.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>🧑‍💻 Coding</h3>
+                    <p>I love to code my own thoughts into reality. I love tech with facial recogniation, like one time how I made a game which is only controlled by hand movements </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Current Skills</h2>
+            <p>I structured my current knowledge using a classic <strong>HTML Table</strong>:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>How clear I am</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>10/10</td>
+                    </tr>
+                    <tr>
+                        <td>CSS (Box Model, Flexbox, Grid)</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <td>Table</td>
+                        <td>10/10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p> Fill out this <strong>HTML Form</strong>:</p>
+            
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Shubham Sir" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="shubham.sir@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Please give me good marks" required></textarea>
+                </div>
+                
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Birru Krishna Chaithanya. Built with basic HTML and CSS.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
